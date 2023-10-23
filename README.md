@@ -73,39 +73,32 @@ A Biblioteca JMRL oferece várias funções úteis, incluindo:
 ### Funções de Entrada e Saída
 
 #### `Readint`
-- Função para ler um valor inteiro do teclado.
+- Função  para facilitar a leitura de um valor inteiro do teclado.
 - Retorna o valor lido.
-- Útil para obter números inteiros a partir da entrada do usuário.
 
 #### `Readdouble`
-- Função para ler um valor real de precisão dupla do teclado.
+- Função para facilitar a leitura de um valor real de precisão dupla do teclado.
 - Retorna o valor lido.
-- Usado para obter números reais de ponto flutuante da entrada do usuário.
 
 #### `Readfloat`
-- Função para ler um valor real de precisão simples do teclado.
+- Função para facilitar a leitura de um valor real de precisão simples do teclado.
 - Retorna o valor lido.
-- Útil para obter números de ponto flutuante de precisão simples da entrada do usuário.
 
 #### `Readbool`
 - Função para ler um valor lógico do teclado.
 - Retorna verdadeiro ou falso.
-- O usuário insere 0 para falso e qualquer outro valor para verdadeiro.
 
 #### `Readchar`
-- Função para ler um caractere do teclado.
+- Função  para facilitar a leitura de um caractere do teclado.
 - Retorna o caractere lido.
-- Usado para obter caracteres individuais da entrada do usuário.
 
 #### `Print`
 - Função para imprimir texto na saída padrão.
 - Não retorna nenhum valor.
-- Usada para exibir mensagens na tela.
 
 #### `Println`
 - Função para imprimir texto na saída padrão seguido por uma quebra de linha.
 - Não retorna nenhum valor.
-- Usada para exibir mensagens na tela com uma quebra de linha.
 
 #### `Encerrar`
 - Função para aguardar que o usuário pressione "Enter" para continuar.
@@ -116,42 +109,35 @@ A Biblioteca JMRL oferece várias funções úteis, incluindo:
 
 #### `ColorText`
 - Função para imprimir texto colorido na saída padrão.
-- Aceita dois argumentos: o texto a ser exibido e o prefixo da cor, como ```COLOR_CYAN```.
-- Útil para destacar partes específicas do texto com cores diferentes.
+- Aceita dois argumentos: o texto a ser exibido e o prefixo da cor( Sempre terá o COLOR_ ), como ```COLOR_CYAN```.
 
 ### Funções de Manipulação de Cadeias de Caracteres
 
 #### `Concat`
 - Função para juntar duas cadeias de caracteres.
 - Retorna a junção das duas cadeias.
-- Usada para concatenar cadeias de caracteres.
 
 #### `Substring`
 - Função para copiar parte de uma cadeia de caracteres.
 - Retorna a parte da cadeia de caracteres especificada.
-- Útil para extrair substrings de uma cadeia maior.
 
 #### `Length`
 - Função para obter o comprimento de uma cadeia de caracteres.
 - Retorna o número de caracteres na cadeia.
-- Usada para determinar o tamanho de uma cadeia de caracteres.
 
 ### Funções para Gerenciamento de Memória
 
 #### `New_ints`
 - Função para reservar espaço para armazenar inteiros.
 - Retorna a área reservada ou `NULL` em caso de falha.
-- Útil para alocar memória para armazenar inteiros.
 
 #### `New_doubles`
 - Função para reservar espaço para armazenar números reais.
 - Retorna a área reservada ou `NULL` em caso de falha.
-- Usada para alocar memória para armazenar números de ponto flutuante.
 
 #### `New_bools`
 - Função para reservar espaço para armazenar valores lógicos.
 - Retorna a área reservada ou `NULL` em caso de falha.
-- Útil para alocar memória para armazenar valores lógicos.
 
 Espero que essa breve descrição das funções facilite o entendimento de como usá-las em seus projetos.
 
