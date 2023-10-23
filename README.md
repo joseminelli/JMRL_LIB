@@ -1,6 +1,6 @@
 # Biblioteca JMRL - Biblioteca de Funções para Uso Geral
 
-A Biblioteca JMRL é um conjunto de funções em C e C++ desenvolvido por José Minelli para oferecer funcionalidades gerais que podem ser úteis em diversos tipos de programas. Ela inclui funções para entrada e saída, manipulação de cadeias de caracteres, gerenciamento de memória e muito mais.
+A Biblioteca JMRL é um conjunto de funções em C e C++ desenvolvido por [José Minelli](https://github.com/joseminelli) e [Raissa Lauar](https://github.com/RaissaLauarNavarro) para oferecer funcionalidades gerais que podem ser úteis em diversos tipos de programas. Ela inclui funções para entrada e saída, manipulação de cadeias de caracteres, texto colorido, gerenciamento de memória e muito mais.
 
 ## Como Usar
 
