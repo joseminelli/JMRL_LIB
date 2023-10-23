@@ -1,0 +1,25 @@
+name: JMRL Library
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up CMake
+      uses: actions/setup-cmake@v1
+
+    - name: Configure, build, and test
+      run: |
+        mkdir build
+        cd build
+        cmake ..
+        make
+        make test
