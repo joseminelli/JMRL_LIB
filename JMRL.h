@@ -1,7 +1,7 @@
 /**
    JMRL - Biblioteca de funcoes para uso geral
    @author  José Minelli
-   @version 1.0 23/10/2023
+   @version 1.1 23/10/2023
 
  */
 // ---------------------- lista de dependencias
@@ -334,7 +334,35 @@ std::string Substring(const std::string& text, int start, unsigned int size) {
 std::string Concat(const std::string& text1, const std::string& text2) {
     return text1 + text2;
 }
+
+/*
+    Funcao para ler uma cadeia de caracteres do teclado.
+    @return cadeia de caracteres lida
+    @param  text - mensagem a ser exibida antes da leitura
+*/
+std::string ReadString(const std::string& text) {
+    std::string buffer;
+    std::cout << text;
+    std::cin >> buffer;
+    return buffer;
+}
 #else
+/*
+    Funcao para ler uma cadeia de caracteres do teclado.
+    @return cadeia de caracteres lida
+    @param  text - mensagem a ser exibida antes da leitura
+*/
+char *ReadString(const char *text) {
+    char *buffer = (char *)malloc(STR_SIZE);
+    if (buffer == NULL) {
+        printf("Erro ao alocar memória para buffer.\n");
+        exit(1);
+    }
+    printf("%s", text);
+    scanf("%s", buffer);
+    fflush(stdin);
+    return buffer;
+}
 /**
     Funcao para juntar 2 textos.
     @return juncao das cadeias de caracteres ou
@@ -416,6 +444,23 @@ chars Filereadln(FILE *filePtr)
     return (buffer);
 } // fim IO_freadln ( )
 
+/*
+    Funcao pra determinar se o caractere é um simbolo.
+    @return 1 se for um simbolo, 0 caso contrario
+    @param c - caractere a ser analisado
+*/
+
+int detectarCaractere(char c) {
+    if (isalpha(c)) {
+        return 1; // Caracteres alfabéticos
+    } else if (isdigit(c)) {
+        return 2; // Dígitos
+    } else if (isspace(c)) {
+        return 3; // Espaço em branco
+    } else {
+        return 4; // Outros símbolos
+    }
+}
 
 /**
     Funcao para ler uma linha inteira.
