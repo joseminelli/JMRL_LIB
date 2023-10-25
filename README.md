@@ -92,6 +92,10 @@ A Biblioteca JMRL oferece várias funções úteis, incluindo:
 - Função  para facilitar a leitura de um caractere do teclado.
 - Retorna o caractere lido.
 
+#### `ReadString`
+- Função para ler uma cadeia de caracteres do teclado.
+- Retorna a cadeia de caracteres lida
+
 #### `Print`
 - Função para imprimir texto na saída padrão.
 - Não retorna nenhum valor.
@@ -105,13 +109,11 @@ A Biblioteca JMRL oferece várias funções úteis, incluindo:
 - Pausa a execução do programa até que o usuário pressione "Enter".
 - Útil para manter a saída visível por um período após a execução do programa.
 
-### Funções para Manipulação de Cores no Texto
-
 #### `ColorText`
 - Função para imprimir texto colorido na saída padrão.
 - Aceita dois argumentos: o texto a ser exibido e o prefixo da cor( Sempre terá o COLOR_ ), como ```COLOR_CYAN```.
 
-### Funções de Manipulação de Cadeias de Caracteres
+### Funções de Manipulação
 
 #### `Concat`
 - Função para juntar duas cadeias de caracteres.
@@ -124,6 +126,18 @@ A Biblioteca JMRL oferece várias funções úteis, incluindo:
 #### `Length`
 - Função para obter o comprimento de uma cadeia de caracteres.
 - Retorna o número de caracteres na cadeia.
+
+#### `ehPrimo`
+- Função para detectar se o número é primo ou não.
+- Retorna caso seja primo.
+
+#### `detectaMaiuscula`
+- Função para detectar se o caractere é maiúsculo ou minúsculo.
+- Retorna 1 se for um maiuscula, 2 se for minuscula, 3 se não for letra.
+
+#### `detectarCaractere`
+- Função para detectar qual o tipo do caractere.
+- Retorna 1 se for um letra, 2 se for dígito, 3 se for espaço em branco e 4 se for outro símbolo
 
 ### Funções para Gerenciamento de Memória
 

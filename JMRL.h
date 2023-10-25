@@ -461,6 +461,37 @@ int detectarCaractere(char c) {
         return 4; // Outros símbolos
     }
 }
+/*
+    Funcao pra determinar se o número é primo.
+    @return retorna se for primo
+    @param numero - número a ser analisado
+*/
+int ehPrimo(int numero) {
+    int divisores = 0;
+    for (int i = 1; i <= numero; i++) {
+        if (numero % i == 0) {
+            divisores++;
+        }
+    }
+    return divisores == 2;
+}
+/*
+    Funcao pra determinar se a letra é maiúscula.
+    @return 1 se for um maiuscula, 2 se for minuscula, 3 se não for letra
+    @param c - caractere a ser analisado
+*/
+
+int detectaMaiuscula(char c) {
+    if (isalpha(c)) {
+        if(isupper(c)) {
+            return 1; // Maiúscula
+        } else {
+            return 2; // Minúscula
+        }
+    } else {
+        return 3; // outro símbolo 
+    } 
+}
 
 /**
     Funcao para ler uma linha inteira.
