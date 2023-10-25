@@ -1,7 +1,7 @@
 /**
    JMRL - Biblioteca de funcoes para uso geral
    @author  José Minelli
-   @version 1.1 23/10/2023
+   @version 1.0 23/10/2023
 
  */
 // ---------------------- lista de dependencias
@@ -446,7 +446,7 @@ chars Filereadln(FILE *filePtr)
 
 /*
     Funcao pra determinar se o caractere é um simbolo.
-    @return 1 se for um simbolo, 0 caso contrario
+    @return 1 se for um letra, 2 se for dígito, 3 se for espaço em branco e 4 se for outro símbolo
     @param c - caractere a ser analisado
 */
 
