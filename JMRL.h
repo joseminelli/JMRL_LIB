@@ -505,4 +505,14 @@ chars Readln(const char *const text)
     return (Filereadln(stdin));
 } // fim IO_readln ( )
 
+/**
+    Funcao para gerar numeros aleatorios
+    @return numero gerado
+    @param min - valor minimo 
+    @param max - valor maximo 
+ */
+int NumeroAleatorio(int min, int max) {
+    return (rand() % (max - min + 1)) + min;
+}
+
 #endif

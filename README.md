@@ -139,6 +139,10 @@ A Biblioteca JMRL oferece várias funções úteis, incluindo:
 - Função para detectar qual o tipo do caractere.
 - Retorna 1 se for um letra, 2 se for dígito, 3 se for espaço em branco e 4 se for outro símbolo
 
+#### `NumeroAleatorio`
+- Função para gerar um número de acordo com parâmetro de maximo e mínimo
+- Retorna o número gerado.
+
 ### Funções para Gerenciamento de Memória
 
 #### `New_ints`
