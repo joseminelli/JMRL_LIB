@@ -112,6 +112,10 @@ A Biblioteca JMRL oferece várias funções úteis, incluindo:
 #### `ColorText`
 - Função para imprimir texto colorido na saída padrão.
 - Aceita dois argumentos: o texto a ser exibido e o prefixo da cor( Sempre terá o COLOR_ ), como ```COLOR_CYAN```.
+- 
+#### `ClearCurrentLine`
+- Função para limpar a linha atual.
+- Útil para apagar linhas indesejadas ou temporárias
 
 ### Funções de Manipulação
 
