@@ -530,4 +530,22 @@ void ClearCurrentLine() {
     printf("\033[2K\r"); // Código de escape para limpar a linha e retornar ao início
     fflush(stdout); // Garante que a saída seja exibida imediatamente
 }
+
+/**
+ * Função para calcular a potência de um número.
+ * @param base - base da potência
+ * @param expoente - expoente da potência
+ * 
+*/
+double Potencia(double base, int expoente) {
+    if (expoente == 0) {
+        return 1.0;
+    } else if (expoente > 0) {
+        return base * Potencia(base, expoente - 1);
+    } else {
+        return 1.0 / (base * Potencia(base, -expoente - 1));
+    }
+}
+
+
 #endif
