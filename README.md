@@ -147,6 +147,10 @@ A Biblioteca JMRL oferece várias funções úteis, incluindo:
 - Função para gerar um número de acordo com parâmetro de maximo e mínimo
 - Retorna o número gerado.
 
+#### `Potencia`
+- Função calcular a potencia dos números passados por parâmetros.
+- Retorna o resultado da potência.
+
 ### Funções para Gerenciamento de Memória
 
 #### `New_ints`
