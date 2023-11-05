@@ -241,6 +241,9 @@ char Readchar(const char *const text)
     return (x);
 } // end IO_readchar ( )
 
+/**
+ * Função encerrar um conjuto de ação
+*/
 void Encerrar(void)
 {
     printf("\nPressione ENTER para continuar...");
@@ -251,6 +254,9 @@ void Encerrar(void)
     } while ('\n' != x);
     getchar();
 }
+/**
+ * Função para limpar o terminal
+*/
 void LimparTela()
 {
 #ifdef _WIN32
@@ -312,20 +318,41 @@ void SetLocale(const std::string local)
 {
     std::locale::global(std::locale(local));
 }
+/**
+ * Função para printar texto
+ * @param text -  Texto a ser printado
+*/
 void Print(const std::string &text)
 {
     std::cout << text;
 }
+/**
+ * Função para printar texto com salto de linha no final
+ * @param text -  Texto a ser printado
+*/
 void Println(const std::string &text)
 {
     std::cout << text << std::endl;
-    //  puts ( text ); putchar ( '\n' );
 } // fim IO_println ( )
+
+/**
+ * Função para contar tamanho de string
+ * @param string - texto que quer usar
+ * @return quantidade de letras
+*/
 int Length(const std::string &text)
 {
     return (text.length());
 } // fim IO_length ( )
 
+/**
+    Funcao para copiar parte de uma cadeia de caracteres.
+    @return parte de cadeia de caracteres ou
+            NULL, caso houver parametros invalidos
+    @param  text  - cadeia de caracteres
+    @param  start - onde comecar
+    @param  size  - quantos caracteres copiar
+ */
 std::string Substring(const std::string& text, int start, unsigned int size) {
     if (start >= 0 && static_cast<size_t>(start + size) <= text.length()) {
         return text.substr(start, size);
@@ -405,16 +432,31 @@ char *Substring(char *text, int start, unsigned int size)
     return (buffer);
 } // fim IO_substring ( )
 
+/**
+ * Função para printar texto
+ * @param text -  Texto a ser printado
+*/
 void Print(const char *const text)
 {
     IO_printf("%s", text);
     //      puts ( text );
 }
+
+/**
+ * Função para printar texto com salto de linha no final
+ * @param text -  Texto a ser printado
+*/
 void Println(const char *const text)
 {
     IO_printf("%s\n", text);
     //  puts ( text ); putchar ( '\n' );
 } // fim IO_println ( )
+
+/**
+ * Função para contar tamanho de string
+ * @param string - texto que quer usar
+ * @return quantidade de letras
+*/
 int Length(char *text)
 {
     int x = 0;
